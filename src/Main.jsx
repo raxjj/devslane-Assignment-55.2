@@ -72,7 +72,7 @@ let product =[
 export default function Main() {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("default");
-  const filterPro = products.filter(function (item) {
+  const filterPro = product.filter(function (item) {
     return item.title.toLowerCase().indexOf(query.toLowerCase()) !== -1;
   });
   filterPro.sort(function (a, b) {
